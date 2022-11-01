@@ -1,0 +1,1110 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract Controller",
+        "name": "controller_",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "DONKEY_ADDRESS",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "accountAssets",
+    "outputs": [
+      {
+        "internalType": "contract DToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "admin",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allMarkets",
+    "outputs": [
+      {
+        "internalType": "contract DToken",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "borrowCaps",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "closeFactorMantissa",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "controller",
+    "outputs": [
+      {
+        "internalType": "contract Controller",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "dTokenMetaDataList",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "underlyingAssetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "exchangeRateCurrent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "underlyingDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "underlyingSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalBorrow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalReserves",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "cash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySupplyBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeyBorrowBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserveFactorMantissa",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "multiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kink",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "jumpMultiplierPerBlock",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DonkeyView.DTokenInfo",
+            "name": "dTokenInfo",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mySuppliedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mySupplyPrincipalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowPrincipalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myRealTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeyBorrowerIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySupplierIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DonkeyView.AccountInfo",
+            "name": "accountInfo",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct DonkeyView.DTokenMetaData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "dTokenMetaDataListAuth",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "underlyingAssetAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "exchangeRateCurrent",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "underlyingDecimals",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "underlyingSymbol",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "symbol",
+                "type": "string"
+              },
+              {
+                "internalType": "address",
+                "name": "contractAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "supplyRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "borrowRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalSupply",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalBorrow",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "collateralFactor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySpeed",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "totalReserves",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "cash",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySupplyBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeyBorrowBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "reserveFactorMantissa",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "multiplierPerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "kink",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "baseRatePerBlock",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "jumpMultiplierPerBlock",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DonkeyView.DTokenInfo",
+            "name": "dTokenInfo",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "mySuppliedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowedBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "mySupplyPrincipalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myBorrowPrincipalBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "myRealTokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeyBorrowerIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "donkeySupplierIndex",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct DonkeyView.AccountInfo",
+            "name": "accountInfo",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct DonkeyView.DTokenMetaData[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeyAccrued",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeyBorrowState",
+    "outputs": [
+      {
+        "internalType": "uint224",
+        "name": "index",
+        "type": "uint224"
+      },
+      {
+        "internalType": "uint32",
+        "name": "block",
+        "type": "uint32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeyBorrowerIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "donkeyLockUpBlock",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "donkeyRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeySpeeds",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeySupplierIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "donkeySupplyState",
+    "outputs": [
+      {
+        "internalType": "uint224",
+        "name": "index",
+        "type": "uint224"
+      },
+      {
+        "internalType": "uint32",
+        "name": "block",
+        "type": "uint32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "contract DToken",
+        "name": "dToken",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "getAccountInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "mySuppliedBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myBorrowedBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "mySupplyPrincipalBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myBorrowPrincipalBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "myRealTokenBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donkeyBorrowerIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donkeySupplierIndex",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DonkeyView.AccountInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "contract DToken",
+        "name": "dToken",
+        "type": "address"
+      }
+    ],
+    "name": "getDTokenInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "underlyingAssetAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "exchangeRateCurrent",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "underlyingDecimals",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolBalance",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "underlyingSymbol",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supplyRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "borrowRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalBorrow",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "collateralFactor",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donkeySpeed",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalReserves",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "cash",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donkeySupplyBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "donkeyBorrowBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "reserveFactorMantissa",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "multiplierPerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "kink",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "baseRatePerBlock",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "jumpMultiplierPerBlock",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct DonkeyView.DTokenInfo",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isBorrowPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isMintPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isPauseGuardian",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isSeizePaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isStakingContract",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "mainDTokenSymbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "markets",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "isListed",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "collateralFactorMantissa",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isDonkeyed",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "oracleGuardianPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "protectedAssets",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "seizeGuardianPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "contract Controller",
+        "name": "newController_",
+        "type": "address"
+      }
+    ],
+    "name": "setController",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "transferGuardianPaused",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
