@@ -12,7 +12,7 @@ const bot = new TelegramBot(token, { polling: true });
 
 mongoDBApi.connect();
 
-// bot.sendMessage(1843351909, "섭섭하네요 ^^");
+
 
 const checkLiquidity = async (address) => {
   try {
@@ -68,7 +68,6 @@ const checkUserInfos = async () => {
 };
 
 donkey.getPrices();
-// checkUserInfos();
 
 setInterval(() => {
   checkUserInfos();
@@ -84,9 +83,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
   const resp = match[1]; // the captured "whatever"
 
   // send back the matched "whatever" to the chat
-  //   bot.sendMessage(chatId, "1");
   bot.sendMessage(chatId, resp);
-  bot.sendMessage(chatId, "1");
 });
 
 bot.onText(/\/add (.+)/, async (msg, match) => {
@@ -178,9 +175,4 @@ bot.on("message", (msg) => {
   if (msg.text === "/help")
     bot.sendMessage(chatId, msg.chat.first_name + helpMsg);
 
-  //bot.sendMessage(chatId, "명령어를 입력해보세요\n /echo message");
-
-  // send a message to the chat acknowledging receipt of their message
-  //bot.sendMessage(chatId, "Received your message");
-  // bot.sendMessage(chatId, msg.text);
 });
